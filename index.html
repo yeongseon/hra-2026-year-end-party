@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08121E">
+  <meta name="description" content="HRA 2026 Year-End Party — 마법 같은 밤, 우리들의 특별한 이야기가 시작됩니다. 디지털 초대장을 열어보세요.">
+  <meta property="og:title" content="HRA 2026 Year-End Party">
+  <meta property="og:description" content="You're Invited to a Magical Night. HRA의 특별한 연말 파티에 여러분을 초대합니다.">
+  <meta property="og:type" content="website">
+  <title>HRA 2026 Year-End Party</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <div class="sky" aria-hidden="true"><div class="stars"></div><div class="moon"></div><img class="castle" src="assets/castle.svg" alt="" width="1440" height="650"><div class="horizon"></div></div>
+  <header class="site-header"><a class="brand" href="./" aria-label="HRA 2026 Year-End Party 홈"><span class="brand-mark" aria-hidden="true">H</span><span>HRA<span class="brand-year">2026</span></span></a><span class="header-note">A NIGHT TO REMEMBER <span aria-hidden="true">✦</span></span></header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow"><span></span> AN INVITATION TO SOMETHING MAGICAL <span></span></p>
+      <h1 id="hero-title"><span class="title-year">HRA 2026</span><span class="title-party">YEAR-END PARTY</span></h1>
+      <p class="hero-subtitle" lang="en">You're Invited to a Magical Night.</p>
+      <div class="ornament" aria-hidden="true"><span></span>✧<span></span></div>
+      <p class="hero-message">마법 같은 밤,<br>우리들의 특별한 이야기가 시작됩니다.</p>
+      <div class="invitation-entry">
+        <button id="open-invitation" class="envelope-button" type="button" aria-haspopup="dialog" aria-controls="invitation" aria-label="봉인된 편지봉투를 열어 초대장 보기">
+          <span class="envelope" aria-hidden="true"><span class="envelope-lining"></span><span class="envelope-letter">YOU ARE CORDIALLY INVITED</span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="seal"><span>H</span></span><span class="envelope-address">To. HRA Members</span></span>
+        </button>
+        <p class="open-hint"><span aria-hidden="true">✦</span> 봉인을 눌러 초대장을 열어보세요</p>
+      </div>
+      <a class="details-link" href="#event-details">THE EVENING <span aria-hidden="true">↓</span></a>
+    </section>
+    <section id="event-details" class="event-section" aria-labelledby="details-title">
+      <p class="eyebrow">SAVE A LITTLE ROOM FOR MAGIC</p>
+      <h2 id="details-title">우리의 특별한 밤을 기다리며</h2>
+      <p class="section-description">다시 만날 우리, 함께 써 내려갈 또 하나의 이야기.</p>
+      <dl class="event-details">
+        <div><dt><span aria-hidden="true">◷</span> DATE</dt><dd data-event="date">추후 안내</dd></div>
+        <div><dt><span aria-hidden="true">⌖</span> LOCATION</dt><dd data-event="location">추후 안내</dd></div>
+        <div><dt><span aria-hidden="true">♧</span> DRESS CODE</dt><dd data-event="dressCode">추후 안내</dd></div>
+      </dl>
+      <div class="coming-soon"><span aria-hidden="true">✧</span><p lang="en">More Magic Coming Soon</p><p>세부 프로그램은 추후 공개됩니다.</p></div>
+    </section>
+  </main>
+  <footer><span class="footer-brand">HRA <span>2026</span></span><p>함께한 순간이, 마법이 되는 밤.</p><small>HRA 2026 Year-End Party</small></footer>
+  <dialog id="invitation" aria-labelledby="invitation-title">
+    <div class="dialog-toolbar"><span>YOUR INVITATION</span><button id="close-invitation" type="button" aria-label="초대장 닫기">닫기 <span aria-hidden="true">×</span></button></div>
+    <article class="parchment">
+      <div class="letter-crest" aria-hidden="true">H<span>✦</span></div>
+      <p class="letter-eyebrow">A MAGICAL NIGHT AWAITS</p>
+      <h2 id="invitation-title">HRA 2026<span>YEAR-END PARTY</span></h2>
+      <div class="letter-divider" aria-hidden="true">✧</div>
+      <p class="salutation" lang="en">Dear HRA Members,</p>
+      <div class="letter-message"><p>평범했던 일상 속,<br>우리는 함께 특별한 순간들을 만들어 왔습니다.</p><p>그리고 이제,<br>2026년의 마지막을 장식할<br>마법 같은 밤이 찾아옵니다.</p><p>반짝이는 추억과 새로운 이야기가 기다리는<br>HRA의 특별한 연말 파티에<br>여러분을 초대합니다.</p></div>
+      <p class="letter-tagline" lang="en">You're Invited to a Magical Night.</p>
+      <dl class="letter-details"><div><dt>DATE</dt><dd data-event="date">추후 안내</dd></div><div><dt>LOCATION</dt><dd data-event="location">추후 안내</dd></div><div><dt>DRESS CODE</dt><dd data-event="dressCode">추후 안내</dd></div></dl>
+      <p class="letter-signoff" lang="en">We Hope to See You There.</p><p class="signature">HRA</p>
+    </article>
+    <div class="share-actions"><button id="share-invitation" type="button"><span aria-hidden="true">↗</span> 초대장 공유</button><button id="copy-url" type="button"><span aria-hidden="true">⧉</span> URL 복사</button></div>
+    <p id="status" role="status" aria-live="polite"></p>
+    <div id="manual-copy" hidden><label for="invitation-url">아래 주소를 선택해 복사해주세요.</label><input id="invitation-url" type="url" readonly></div>
+  </dialog>
+  <noscript><p class="noscript">초대장을 열려면 JavaScript를 활성화해주세요. HRA 2026 Year-End Party의 날짜·장소·드레스코드는 추후 안내됩니다.</p></noscript>
+</body>
+</html>

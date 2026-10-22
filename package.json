@@ -1,0 +1,20 @@
+{
+  "name": "hra-2026-year-end-party",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official website and digital invitation for HRA 2026 Year-End Party.",
+  "scripts": {
+    "lint": "html-validate index.html && node tests/css-check.js && node --check script.js && node --check tests/invitation.spec.js && node --check tests/static.test.js",
+    "test:static": "node --test tests/static.test.js",
+    "test:browser": "playwright test",
+    "test": "npm run lint && npm run test:static && npm run test:browser"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "css-tree": "^3.2.1",
+    "html-validate": "^11.17.0"
+  }
+}
